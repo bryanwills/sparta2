@@ -35,15 +35,15 @@ export default function ThemeToggle() {
   }, [])
 
   return isMounted ? (
-    <div className="inline-flex items-center p-[1px] rounded-3xl bg-orange-300 dark:bg-zinc-600">
+    <div className="inline-flex items-center p-[1px] rounded-2xl bg-[#e3b151] dark:bg-zinc-700">
       {themes.map(t => {
         const checked = t === theme
         return (
           <button
             key={t}
             className={`${
-              checked ? 'bg-white text-black' : ''
-            } cursor-pointer rounded-3xl p-2`}
+              checked ? 'bg-white text-[#080e18]' : ''
+            } cursor-pointer rounded-2xl p-2`}
             onClick={toggleTheme}
             aria-label="Toggle theme"
           >

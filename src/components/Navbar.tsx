@@ -4,9 +4,8 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const Logo = require('../imgs/Logo_Highres_transparent.png');
 
-
   return (
-      <nav className="w-full bg-white dark:bg-black">
+      <nav className="w-full dark:text-[#e3b151] text-[#080e18] dark:bg-[#080e18]]">
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
               <div>
                   <div className="flex items-center justify-between py-3 md:py-5 md:block text-right">
@@ -22,7 +21,7 @@ export default function NavBar() {
                               {navbar ? (
                                   <svg
                                       xmlns="http://www.w3.org/2000/svg"
-                                      className="w-6 h-6 text-amber-300"
+                                      className="w-6 h-6 dark:text-[#e3b151] text-[#080e18]"
                                       viewBox="0 0 20 20"
                                       fill="currentColor"
                                   >
@@ -35,7 +34,7 @@ export default function NavBar() {
                               ) : (
                                   <svg
                                       xmlns="http://www.w3.org/2000/svg"
-                                      className="w-6 h-6 text-amber-300"
+                                      className="w-6 h-6 dark:text-[#e3b151] text-[#080e18]"
                                       fill="none"
                                       viewBox="0 0 24 24"
                                       stroke="currentColor"
@@ -58,17 +57,17 @@ export default function NavBar() {
                           navbar ? "block" : "hidden"
                       }`}
                   >
-                      <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
-                          <li className="text-amber-300 hover:text-indigo-200 text-center">
-                              <a href="javascript:void(0)">Home</a>
+                      <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl bg-white dark:text-[#e3b151] text-[#080e18] dark:bg-[#080e18]">
+                          <li className="hover:text-indigo-200 text-center">
+                              <a href="#apply">Home</a>
                           </li>
-                          <li className="text-amber-300 hover:text-indigo-200 text-center">
+                          <li className="hover:text-indigo-200 text-center">
                               <a href="javascript:void(0)">Testimonials</a>
                           </li>
-                          <li className="text-amber-300 hover:text-indigo-200 text-center">
+                          <li className="hover:text-indigo-200 text-center">
                               <a href="javascript:void(0)">Apply</a>
                           </li>
-                          <li className="text-amber-300 hover:text-indigo-200 text-center">
+                          <li className="hover:text-indigo-200 text-center">
                               <a href="javascript:void(0)">Contact</a>
                           </li>
                       </ul>

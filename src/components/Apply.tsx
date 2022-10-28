@@ -8,8 +8,8 @@ export default function Header() {
   // const image = require('../imgs/House.jpg');
 
   return (
-    <div className="apply grid grid-col-2 mt-10">
-    <div className="justify-between text-black dark:text-amber-300 bg-white dark:bg-black">
+    <div className="apply grid grid-col-2 mt-5">
+    <div className="justify-between">
         <p>Apply Now!</p>
         <div className="col solutions">
             <ul>
@@ -30,7 +30,7 @@ export default function Header() {
             </ul>
         </div>
         <div className="apply bottom">
-            <div className="content space-between">
+            <div className="content">
                 <div className="">
 
                 </div>

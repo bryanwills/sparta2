@@ -5,7 +5,7 @@ import "./FooterStyles.css";
 export default function Footer() {
   return (
       <div className="footer">
-        <div className="container justify-between text-black dark:text-amber-300 bg-white dark:bg-black">
+        <div className="container justify-between grid grid-cols-3">
             <div className="col solutions">
                 <h6>Solutions</h6>
                 <ul>

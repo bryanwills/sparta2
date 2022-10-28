@@ -2,14 +2,17 @@ import React, {useState } from 'react';
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
+  const Logo = require('../imgs/Logo_Highres_transparent.png');
+
 
   return (
-      <nav className="w-full bg-red-500 shadow dark:bg-black">
+      <nav className="w-full bg-white dark:bg-black">
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
               <div>
-                  <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                  <div className="flex items-center justify-between py-3 md:py-5 md:block text-right">
                       <a href="javascript:void(0)">
-                          <h2 className="text-md sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-bold text-amber-300">Sparta Mortgage</h2>
+                         <div className=""><img src={Logo} width="300" className=""/></div>
+                          {/* <h2 className="text-md sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-bold text-amber-300">Sparta Mortgage</h2> */}
                       </a>
                       <div className="md:hidden">
                           <button
@@ -55,7 +58,7 @@ export default function NavBar() {
                           navbar ? "block" : "hidden"
                       }`}
                   >
-                      <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                      <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl">
                           <li className="text-amber-300 hover:text-indigo-200 text-center">
                               <a href="javascript:void(0)">Home</a>
                           </li>

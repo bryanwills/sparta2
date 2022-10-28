@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Monsterrat: ['"Monsterrat"','sans-serif']
+      }
+    },
   },
   plugins: [],
 }

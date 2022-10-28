@@ -1,8 +1,6 @@
-import React, {useState } from 'react';
+import React from 'react';
 
-export default function Header() {
-  const [navbar, setNavbar] = useState(false);
-
+export default function Footer() {
   return (
       <div className="w-full bg-white shadow dark:bg-black dark:text-amber-300">
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">

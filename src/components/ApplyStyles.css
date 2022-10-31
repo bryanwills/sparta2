@@ -60,18 +60,17 @@ p {
     padding: 1rem;
   }
 
-  .apply .solutions, .support {
+  /*.apply .solutions, .support {
     display: none;
-  }
+  }*/
 
   .apply button {
     width: 100%;
     margin: .2rem 0;
   }
 
-  .social-icons {
+  /* .social-icons {
     display: none;
-
-  }
+  }*/
 
   }

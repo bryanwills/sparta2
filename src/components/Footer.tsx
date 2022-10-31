@@ -4,15 +4,12 @@ import "./FooterStyles.css";
 
 export default function Footer() {
   return (
-      <div className="footer">
-        <div className="container justify-between grid grid-cols-3">
+      <div className="footer items-center">
+        <div className="container justify-between grid grid-cols-3 items-center">
             <div className="col solutions">
                 <h6>Solutions</h6>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Apply</a></li>
-                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
             <div className="col support">

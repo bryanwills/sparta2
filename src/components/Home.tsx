@@ -10,7 +10,7 @@ export default function Home() {
              <img src={image} className="hover:bg-blend-darken brightness-50 object-cover" />
              <button
                className=
-                "absolute xl:bottom-20 xl:left-40 bottom-20 left-20 bg-[#e3b151] text-[#080e18] px-2 py-2 rounded-2xl hover:bg-[#bf1e2e]">
+                "absolute xl:bottom-20 xl:left-40 bottom-20 left-20 bg-[#e3b151] text-[#080e18] px-2 py-2 rounded-2xl hover:bg-[#bf1e2e] sm:width-50">
                 Apply Now
                 </button>
           </div>

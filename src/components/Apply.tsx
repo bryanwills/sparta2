@@ -1,43 +1,37 @@
-import {HiOutlineComputerDesktop, HiPhone} from 'react-icons/hi2';
-import "./ApplyStyles.css";
+import {HiOutlineComputerDesktop, HiPhoneArrowUpRight} from 'react-icons/hi2';
+// import "./ApplyStyles.css";
 import React, {useState } from 'react';
 
 
-export default function Header() {
+export default function Apply() {
   const [navbar, setNavbar] = useState(false);
   // const image = require('../imgs/House.jpg');
 
   return (
-    <div className="apply grid grid-col-2 mt-5">
-    <div className="justify-between">
-        <p>Apply Now!</p>
-        <div className="col solutions">
+    <div className="mx-auto">
+    <div className="">
+        <p>Click an option below to apply Now!</p>
+        <div className="flex flex-col space-x-4 flex-wrap items-center justify-center align-center">
             <ul>
                 <li>
                     <a href="https://1857586.my1003app.com/51796/register">
                         <HiOutlineComputerDesktop size={60} />
-                        <p>Apply</p>
-                </a></li>
-            </ul>
-        </div>
-        <div className="col support">
-            <ul>
+                        <p>New Applicants Click Here</p>
+                    </a>
+                </li>
                 <li>
-                    <a href="#">
-                        Home
+                    <a href="https://1857586.my1003app.com/51796/register">
+                        <HiOutlineComputerDesktop size={60} />
+                        <p>Returning Applicants Click Here</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:5028191739">
+                        <HiPhoneArrowUpRight size={60} />
+                        <p>New Applicants Apply Here</p>
                     </a>
                 </li>
             </ul>
-        </div>
-        <div className="apply bottom">
-            <div className="content">
-                <div className="">
-
-                </div>
-                <div className="">
-                    <HiOutlineComputerDesktop size={20} style={{marginRight:'10px'}} />
-                </div>
-            </div>
         </div>
     </div>
 

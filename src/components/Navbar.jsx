@@ -1,4 +1,9 @@
 import React, {useState } from 'react';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import Home from './Home';
+import Apply from './Apply';
+import Contact from './Contact';
+import Testimonials from './Testimonials';
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -58,22 +63,35 @@ return (
                     }`}
                 >
                     <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl bg-white dark:text-[#e3b151] text-[#080e18] dark:bg-[#080e18]">
-                        <li className="hover:text-indigo-200 text-center">
-                            <a href="/">Home</a>
-                        </li>
-                        <li className="hover:text-indigo-200 text-center">
-                            <a href="/reviews">Reviews</a>
-                        </li>
-                        <li className="hover:text-indigo-200 text-center">
-                            <a href="/apply">Apply</a>
-                        </li>
-                        <li className="hover:text-indigo-200 text-center">
-                            <a href="/contact">Contact</a>
-                        </li>
+                            <div className="hover:text-indigo-200 text-center">
+                                <Link to="/">Home</Link>
+                            </div>
+                            <div className="hover:text-indigo-200 text-center">
+                                <CustomLink to="/testimonials">Testimonials</CustomLink>
+                            </div>
+                            <div className="hover:text-indigo-200 text-center">
+                                <CustomLink to="/apply">Apply</CustomLink>
+                            </div>
+                            <div className="hover:text-indigo-200 text-center">
+                                <CustomLink to="/contact">Contact</CustomLink>
+                            </div>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 );
+}
+
+function CustomLink({ to, children,...props }){
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+    return(
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
+    )
 }
